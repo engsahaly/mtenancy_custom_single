@@ -1,0 +1,15 @@
+<?php
+
+namespace {{ namespace }};
+
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+use App\Models\Scopes\TenantScope;
+use App\Tenantable;
+
+class {{ class }} extends Model
+{
+    use HasFactory, Tenantable;
+
+    protected $guarded = [];
+}
